@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Off Canvas Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <div style="width: 300px;">
+    
+      <div>
+<form class="form-inline" role="form">
+  <div class="form-group" style="width: 100%; padding: 5px;">
+    <label class="sr-only" for="exampleInputEmail2">Name</label>
+    <input type="text" class="form-control" id="name-filter" placeholder="Filter Players">
+  </div>
+</form>
+          
+          </div>
+          
+      <ul class="list-group" id="player-names">
+          
+      </li>
+      <li class="list-group-item">Flo</li>
+      <li class="list-group-item">Martin</li>
+      <li class="list-group-item">Player 3</li>
+    </ul>      
+  </div>
+  
+
+  
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="components/jquery/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="quicksilver.js"></script>
+    <script src="liveUpdate.js"></script>
+
+    <script>
+$(document).ready(function() {
+  $('#name-filter').liveUpdate("#player-names")
+});
+    </script>
+  
+  </body>
+</html>
