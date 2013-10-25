@@ -1,0 +1,88 @@
+/*
+ * Style twaks
+ * --------------------------------------------------
+ */
+body {
+  padding-top: 70px;
+}
+footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.player-box-blue {
+margin: 20px;
+margin-top:50px;
+padding:20px;
+border: 4px dashed #46b8da;
+border-radius: 4px 4px 0 0;
+box-shadow: none;
+width:80%;
+}
+.player-box-red {
+	
+	margin: 20px;
+	margin-top:50px;
+	padding:20px;
+	border: 4px dashed #d43f3a;
+	border-radius: 4px 4px 0 0;
+	box-shadow: none;
+	width:80%;
+
+}
+.toeggeli{
+	width:80%;
+	height:220px;
+	margin:10%;
+	background-color:#5cb85c;
+}
+
+.v-liner{
+	float:left;
+	width:30%;
+	height:290px;
+}
+.v-liner-lg {
+		width:40%;
+		float:left;
+	   height:290px;
+}
+.score{
+	margin:auto;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
